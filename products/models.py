@@ -18,6 +18,9 @@ class Category(models.Model):
         db_table = 'categories' # default value is <app-name><model-name>
         verbose_name = _('Category') # shown in admin site
         verbose_name_plural = _('Categories')
+    
+    def __str__(self):
+        return self.title
 
 
 class Product(models.Model):
@@ -33,6 +36,9 @@ class Product(models.Model):
         db_table = 'product'
         verbose_name = _('products')
         verbose_name_plural = _('products')
+    
+    def __str__(self):
+        return self.title
 
 
 class File(models.Model):
