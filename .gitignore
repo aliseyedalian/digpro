@@ -3,3 +3,4 @@ venvprj/
 db.sqlite3
 media/
 .vscode/
+local_settings.py
